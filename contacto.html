@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contacto - Los Autos Más Veloces</title>
+    <meta name="description" content="Contáctanos para más información sobre hiperdeportivos.">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contacto</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="comparativa.html">Comparativa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="form-container">
+            <h2>Solicita Más Información</h2>
+            <p>Rellena el formulario para que un agente se ponga en contacto contigo.</p>
+            
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="motivo">Motivo de Contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="info-jesko">Información sobre el Jesko</option>
+                        <option value="info-chiron">Información sobre el Chiron</option>
+                        <option value="info-tuatara">Información sobre el Tuatara</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-link">Enviar Solicitud</button>
+            </form>
+        </div>
+
+        <div class="map-container">
+            <h2>Visita Nuestro Showroom</h2>
+            <p>Haz clic en las zonas interactivas del mapa para más detalles.</p>
+            
+            <img src="img/showroom-map.jpg" alt="Mapa de ubicación del showroom" usemap="#showroom-map">
+            
+            <map name="showroom-map">
+                <area shape="rect" coords="50,50,250,200" href="#" alt="Showroom Principal" title="Showroom Principal">
+                
+                <area shape="circle" coords="350,250,80" href="#" alt="Oficinas Centrales" title="Oficinas Centrales">
+            </map>
+        </div>
+
+    </main>
+
+</body>
+</html>
